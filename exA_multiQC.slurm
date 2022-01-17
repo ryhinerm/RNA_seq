@@ -13,10 +13,10 @@ mkdir ../exA_multiQC
 cd ../exA_multiQC
 
 # Copy files
-cp ex1_QC/*.html .
-cp ex4_QC/*.html .
-cp ex4_map_non-mRNA/*_log.txt
-cp ex4_map_genome/*_log.txt
+cp ../ex1_QC/*.zip .
+cp ../ex4_QC/*.zip .
+cp ../ex4_map_non-mRNA/*_log.txt .
+cp ../ex4_map_genome/*_log.txt .
 
 # Load module
 module add UHTS/Analysis/MultiQC/1.8
