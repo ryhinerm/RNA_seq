@@ -14,6 +14,7 @@ cd ../exA_multiQC
 
 # Copy files
 cp ../ex1_QC/*.zip .
+cp ../ex3_clip_trim/*_log.txt .
 cp ../ex4_QC/*.zip .
 cp ../ex4_map_non-mRNA/*_log.txt .
 cp ../ex4_map_genome/*_log.txt .
