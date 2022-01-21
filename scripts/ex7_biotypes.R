@@ -8,7 +8,7 @@ setwd("<Insert here your working directory>")
 qual_col_pals = brewer.pal.info[brewer.pal.info$category == 'qual',]
 Color = unlist(mapply(brewer.pal, qual_col_pals$maxcolors, rownames(qual_col_pals)))
 
-data <- read.table(file = "biotype_counts_processed_superdetailed.txt", sep = "\t", header = TRUE)
+data <- read.table(file = "biotype_counts_processed.txt", sep = "\t", header = TRUE)
 
 colnames(data) <- c("Biotype",
                     "Neuropil_Poly_1", "Neuropil_Poly_2", "Neuropil_Poly_3",
@@ -24,7 +24,7 @@ sample_order <- c("Biotype",
                   "Somata_Poly_1", "Somata_Poly_2", "Somata_Poly_3")
 
 # Plot
-pdf("RPF_biotypes_superdetailed.pdf", paper = "a4", useDingbats = FALSE)
+pdf("RPF_biotypes.pdf", paper = "a4", useDingbats = FALSE)
 ggplot(data_for_plot, 
 
        aes(x = factor(Condition, levels = sample_order),
